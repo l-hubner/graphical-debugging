@@ -140,6 +140,8 @@ namespace GraphicalDebugging
             loadersCS.Add(new ValuesContainer.LoaderCreator());
             loadersCS.Add(new GeometryContainer.LoaderCreator());
 
+            loadersCS.Add(new BitmapSourceLoader.LoaderCreator());
+
             loadersCacheCpp = new LoadersCache();
             loadersCacheCS = new LoadersCache();
         }
